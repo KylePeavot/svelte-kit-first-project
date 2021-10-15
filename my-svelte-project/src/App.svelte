@@ -1,19 +1,25 @@
 <script lang="ts">
+	import TodoList from "./TodoList.svelte";
+
 	let name = 'World';
 
+	let data = {
+		key: 'value',
+		prop1: 'value',
+		prop2: 1
+	}
 
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
+	<TodoList todoAddButtonText="Add Item" />
 </main>
 
 <style>
 	main {
-		text-align: center;
 		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		max-width: 50%;
 	}
 
 	h1 {
